@@ -209,6 +209,6 @@ write.csv(SSB_20.21_wide, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpec
 SamplingArea = 0.00353 # area in m^2 sampled for each soil seed bank sample
 # Create a function here
 
-apply(SSB_20.21_wide[, c(9:80)], 2, fun)
+#apply(SSB_20.21_wide[, c(9:80)], 2, fun)
 
-SSB_20.21_wide[,c(9:80)]/SamplingArea
+#SSB_20.21_wide[,c(9:80)]/SamplingArea
