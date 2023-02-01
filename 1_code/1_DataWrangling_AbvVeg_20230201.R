@@ -43,7 +43,15 @@ INT_20.21.22_CoverPercent = INT_20.21.22
 str(INT_20.21.22_CoverPercent)
 
 INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '6'] = 97.5
-
+INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$Bare_Class = as.numeric(INT_20.21.22_CoverPercent$Bare_Class)
+summary(INT_20.21.22_CoverPercent$Bare_Class)
 
 library(stringr)
 # INT_20.21.22$Bare_Class = str_replace_all(INT_20.21.22$Bare_Class, class_string) # replace class values
