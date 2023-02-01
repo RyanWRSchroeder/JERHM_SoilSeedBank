@@ -207,8 +207,16 @@ write.csv(SSB_20.21_wide, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpec
 ##### Transform seedling count data to density (seeds per m^2)
 
 SamplingArea = 0.00353 # area in m^2 sampled for each soil seed bank sample
-# Create a function here
 
-#apply(SSB_20.21_wide[, c(9:80)], 2, fun)
+SSB_20.21_ID = SSB_20.21_wide[,c(1:8)] # create new object of just the IDs of the seed bank plots and Factors of the plots
+str(SSB_20.21_ID)
 
-#SSB_20.21_wide[,c(9:80)]/SamplingArea
+SSB_20.21_m2 = SSB_20.21_wide[,c(9:80)]/SamplingArea # Calculate seeds per m^2 for each plot and taxa (72 taxa), strips the Factors
+str(SSB_20.21_m2) # 283 seeds/m2 = 1 seedling; max: 70821.5 = 250 seedlings
+summary(SSB_20.21_m2)
+  
+SSB_20.21_m2 = cbind(SSB_20.21_ID, SSB_20.21_m2) # combine the datasets to form a species matrix of the 72 taxa (lumped) as seeds/m^2
+str(SSB_20.21_m2)
+
+
+

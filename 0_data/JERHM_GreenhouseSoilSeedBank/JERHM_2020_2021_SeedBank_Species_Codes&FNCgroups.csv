@@ -1,0 +1,82 @@
+USDA_Code,Species_Name,Common_Name,Family,Group,Duration,Growth_Habit,Native_Status,Functional_Group
+AMAL,Amaranthus albus,prostrate pigweed,Amaranthaceae,Dicot,Annual,Forb/Herb,Introduced,Introduced Annual Forb
+MOCE,Mollugo cerviana,threadstem carpetweed,Molluginaceae,Dicot,Annual,Forb/Herb,Introduced,Introduced Annual Forb
+ECCR,Echinochloa crus-galli,barnyardgrass,Poaceae,Monocot,Annual,Graminoid,Introduced,Introduced Annual Grass
+ERCU2,Eragrostis curvula,weeping lovegrass,Poaceae,Monocot,Perennial,Graminoid,Introduced,Introduced Perennial Grass
+ERLE,Eragrostis lehmanniana,Lehman lovegrass,Poaceae,Monocot,Perennial,Graminoid,Introduced,Introduced Perennial Grass
+UNK,2PLANT,Unknown plant,N/A,N/A,N/A,N/A,N/A,N/A
+UNK_DICOT,2FD,Unknown forb dicot,N/A,Dicot,N/A,Forb/Herb,N/A,N/A
+UNK_MONO,2GRAM,Unknown graminoid,N/A,Monocot,N/A,Graminoid,N/A,N/A
+AMPA,Amaranthus palmeri,carelessweed,Amaranthaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+APRA,Aphanostephus ramosissimus,plains dozedaisy,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+ASNU4,Astragalus nuttallianus,smallflowered milkvetch,Fabaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+BOWR,Boerhavia wrightii,largebract spiderling,Nyctaginaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CHAMA15,Chamaesyce sp.,sandmat,Euphorbiaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CHGL13,Chamaesyce glyptosperma,ribseed sandmat,Euphorbiaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CHIN2,Chenopodium incanum,mealy goosefoot,Chenopodiaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CHMI7,Chamaesyce micromera,desert spurge,Euphorbiaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CHSE6,Chamaesyce serpyllifolia,thymeleaf sandmat,Euphorbiaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CHSE7,Chamaesyce serrula,sawtooth sandmat,Euphorbiaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CRAN4,Cryptantha angustifolia,narrow leaf cryptantha,Boraginaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CRCR3,Cryptantha crassisepala,thicksepal cryptantha,Boraginaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CRMI,Cryptantha micrantha,redroot cryptantha,Boraginaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+CRYPT,Cryptantha sp.,cryptantha,Boraginaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+DEPI,Descurainia pinnata,western tansymustard,Brassicaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+ERAB2,Eriogonum abertianum,Abert's buckwheat,Polygonaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+HEPE,Helianthus petiolaris,prairie sunflower,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+HOHU,Houstonia humifusa,matted bluet,Rubiaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+HYWI,Hymenothrix wislizeni,Trans-Pecos thimblehead,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+IPCO2,Ipomoea costellata,crested morning-glory,Convolvulaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+KAHI,Kallstroemia hirsutissima,hairy caltrop,Zygophyllaceae ,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+KAPA,Kallstroemia parviflora ,warty caltrop,Zygophyllaceae ,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+LACO13,Laennecia coulteri,Coulter's horseweed,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+LACTU,Lactuca sp.,lettuce,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+LIAU4,Linum australe,southern flax,Linaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+MOVE,Mollugo verticillata,green carpetweed,Molluginaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+NAHI,Nama hispidum,bristly nama,Hydrophyllaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+PASP,Palafoxia sphacelata,rotting palafox,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+PEAN,Pectis angustifolia,lemonscent,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+PECTI,Pectis sp.,chinchweed,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+PEPA2,Pectis papposa,manybristle chinchweed,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+PLPA2,Plantago patagonica,woolly plantain,Plantaginaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+POHA5,Portulaca halimoides,silkcotton purslane,Portulacaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+POPI3,Portulaca pilosa,kiss me quick,Portulacaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+PORTU,Portulaca sp.,purslane,Portulacaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+TILA2,Tidestromia lanuginosa,woolly tidestromia,Amaranthaceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+VEEN,Verbesina encelioides,cowpen daisy,Asteraceae,Dicot,Annual,Forb/Herb,Native,Native Annual Forb
+ARAD,Aristida adscensionis,sixweeks threeawn,Poaceae,Monocot,Annual,Graminoid,Native,Native Annual Grass
+BOAR,Bouteloua aristidoides,needle grama,Poaceae,Monocot,Annual,Graminoid,Native,Native Annual Grass
+BOBA2,Bouteloua barbata,sixweeks grama,Poaceae,Monocot,Annual,Graminoid,Native,Native Annual Grass
+LEPAB,Leptochloa panicea ssp. brachiata,mucronata sprangeltop,Poaceae,Monocot,"Annual, Perennial",Graminoid,Native,Native Annual Grass
+MUSQ,Munroa squarrosa,false buffalograss,Poaceae,Monocot,Annual,Graminoid,Native,Native Annual Grass
+PAHI5,Panicum hirticaule,Mexican panicgrass,Poaceae,Monocot,Annual,Graminoid,Native,Native Annual Grass
+URAR,Urochloa arizonica,Arizona signalgrass,Poaceae,Monocot,Annual,Graminoid,Native,Native Annual Grass
+VUOC,Vulpia octoflora,sixweeks fescue,Poaceae,Monocot,Annual,Graminoid,Native,Native Annual Grass
+BAAB,Bahia absinthifolia,hairyseed bahia,Asteraceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+BAMU,Baileya multiradiata,desert marigold,Asteraceae,Dicot,"Annual, Biennial, Perennial",Forb/Herb,Native,Native Perennial Forb
+CHAL11,Chamaesyce albomarginata,whitemargin sandmat,Euphorbiaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+CHSO,Chamaesaracha sordida,hairy five eyes,Solanaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+CIOC2,Cirsium ochrocentrum,yellowspine thistle,Asteraceae,Dicot,"Biennial, Perennial",Forb/Herb,Native,Native Perennial Forb
+DALA3,Dalea lanata,woolly prairie clover,Fabaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+DIWI2,Dimorphocarpa wislizeni,spectaclepod,Brassicaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+ERDI4,Erigeron divergens,spreading fleabane,Asteraceae,Dicot,Biennial,Forb/Herb,Native,Native Perennial Forb
+GUSA2,Gutierrezia sarothrae,broom snakeweed,Asteraceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+HOFFM,Hoffmannseggia sp.,rushpea,Fabaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+HOGL2,Hoffmannseggia glauca,Indian rushpea,Fabaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+MAPI,Machaeranthera pinnatifida,lacy tansyaster,Asteraceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+RUME2,Rumex mexicanus,Mexican dock,Polygonaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+SPAN3,Sphaeralcea angustifolia,copper globemallow,Malvaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+SPIN2,Sphaeralcea incana,gray globemallow,Malvaceae,Dicot,Perennial,Forb/Herb,Native,Native Perennial Forb
+ARPU9,Aristida purpurea,purple threeawn,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+BOER4,Bouteloua eriopoda,black grama,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+CYRE14,Cyperus retroflexus ,oneflower flatsedge,Cyperaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+DAPU7,Dasyochloa pulchella,fluffgrass,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+Fuzzy_Bluegrass,N/A,Fuzzy bluegrass,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+MUPO2,Muhlenbergia porteri,bush muhly,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+SPCO4,Sporobolus contractus,spike dropseed,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+SPCR,Sporobolus cryptandrus,sand dropseed,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+SPFL2,Sporobolus flexuosus,mesa dropseed,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+SPNE,Sporobolus nealleyi,gyp dropseed,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+SPORO,Sporobolus sp.,dropseed,Poaceae,Monocot,Perennial,Graminoid,Native,Native Perennial Grass
+ATCA2,Atriplex canescens,fourwing saltbush,Chenopodiaceae,Dicot,Perennial,Shrub,Native,Shrub
+PRGL2,Prosopis glandulosa,honey mesquite,Fabaceae,Dicot,Perennial,Shrub,Native,Shrub
