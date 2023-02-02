@@ -42,6 +42,7 @@ class_string
 INT_20.21.22_CoverPercent = INT_20.21.22
 str(INT_20.21.22_CoverPercent)
 
+# Replace classes with mean cover percentages: Bare Ground
 INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '6'] = 97.5
 INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '5'] = 85
 INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '4'] = 62.5
@@ -52,6 +53,24 @@ INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] 
 INT_20.21.22_CoverPercent['Bare_Class'][INT_20.21.22_CoverPercent['Bare_Class'] == '0'] = 0
 INT_20.21.22_CoverPercent$Bare_Class = as.numeric(INT_20.21.22_CoverPercent$Bare_Class)
 summary(INT_20.21.22_CoverPercent$Bare_Class)
+
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Bare_Cover_Pct = Bare_Class) # Rename column to reflect change to cover %
+summary(INT_20.21.22_CoverPercent$Bare_Cover_Pct)
+
+# Replace classes with mean cover percentages: Litter
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$Litter_Class = as.numeric(INT_20.21.22_CoverPercent$Litter_Class)
+summary(INT_20.21.22_CoverPercent$Litter_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  mutate(rename)
 
 library(stringr)
 # INT_20.21.22$Bare_Class = str_replace_all(INT_20.21.22$Bare_Class, class_string) # replace class values
