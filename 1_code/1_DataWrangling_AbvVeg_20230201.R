@@ -33,6 +33,8 @@ INT_20.21.22$Grazed_Ungrazed = as.factor(INT_20.21.22$Grazed_Ungrazed) # coerce 
 
 # Replace na values in Annual_Forb_Seelding_count to be 0s since since observed
 INT_20.21.22 = INT_20.21.22 %>% mutate(An_Forb_Seedling_count = ifelse(is.na(An_Forb_Seedling_count), 0, An_Forb_Seedling_count)) # replace na values with 0
+INT_20.21.22_CoverPercent$An_Forb_Seedling_count = as.numeric(INT_20.21.22_CoverPercent$An_Forb_Seedling_count) # coerce to numeric
+summary(INT_20.21.22_CoverPercent$An_Forb_Seedling_count)
 
 #Replace Cover classes (Bailey and Poulton, 1968) in the cover class columns with the mean value of the cover class and coerce to numeric
 
@@ -177,6 +179,26 @@ summary(INT_20.21.22_CoverPercent$Gravel_Class)
 INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
   rename(Gravel_Cover_Pct = Gravel_Class)
 summary(INT_20.21.22_CoverPercent$Gravel_Cover_Pct)
+
+# Calculate Total Mean Plant Cover Percent
+INT_20.21.22_CoverPercent$Total_Plant_Cover_Pct = INT_20.21.22_CoverPercent$Annual_Grass_Cover_Pct +
+  INT_20.21.22_CoverPercent$Perennial_Grass_Cover_Pct + INT_20.21.22_CoverPercent$Annual_Forb_Cover_Pct + 
+  INT_20.21.22_CoverPercent$Perennial_Forb_Cover_Pct + INT_20.21.22_CoverPercent$Shrub_Cover_Pct +
+  INT_20.21.22_CoverPercent$Subshrub_Cover_Pct
+summary(INT_20.21.22_CoverPercent$Total_Plant_Cover_Pct)
+
+## Reorder Interspace Dataframe columns
+str(INT_20.21.22_CoverPercent)
+INT_order = c("Plot_ID", "Year", "Block_Num", "Treatment", "Interspace_Num", "Transect_Num",
+              "Grazed_Ungrazed", "Bare_Cover_Pct", "Gravel_Cover_Pct", "Litter_Cover_Pct", "Annual_Grass_Cover_Pct",
+              "Perennial_Grass_Cover_Pct", "Annual_Forb_Cover_Pct", "Perennial_Forb_Cover_Pct", "Shrub_Cover_Pct",
+              "Subshrub_Cover_Pct", "Total_Plant_Cover_Pct", "An_Forb_Seedling_count", "Notes")
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent[, INT_order] # reorders dataframe 
+str(INT_20.21.22_CoverPercent)
+
+# Drop rows with na values (Blocks 5, 6, 7) for 2020
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  drop_na(Total_Plant_Cover_Pct)
 
 #library(stringr)
 # INT_20.21.22$Bare_Class = str_replace_all(INT_20.21.22$Bare_Class, class_string) # replace class values
