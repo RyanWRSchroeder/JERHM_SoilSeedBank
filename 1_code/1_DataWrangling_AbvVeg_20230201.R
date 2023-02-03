@@ -205,3 +205,14 @@ INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% # drop these columns t
 
 
 write.csv(INT_20.21.22_CoverPercent, file = "2_incremental/JERHM_2020_2021_2022_InterspaceCoverPercentages_20230203.csv")
+
+### Create Control Only Interspace dataset
+
+INT_20.21.22_CoverPercent.Control = INT_20.21.22_CoverPercent %>% 
+  filter(Treatment %in% "Control")
+summary(INT_20.21.22_CoverPercent.Control)
+
+write.csv(INT_20.21.22_CoverPercent.Control, file = "2_incremental/JERHM_2020_2021_2022_InterspaceCoverPercentages_ControlOnly_20230203.csv")
+
+# 
+
