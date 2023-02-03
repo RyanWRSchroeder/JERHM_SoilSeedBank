@@ -200,4 +200,8 @@ str(INT_20.21.22_CoverPercent)
 INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
   drop_na(Total_Plant_Cover_Pct)
 
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% # drop these columns to just get cover percentages
+  select(-Grazed_Ungrazed, -An_Forb_Seedling_count, -Notes)
+
+
 write.csv(INT_20.21.22_CoverPercent, file = "2_incremental/JERHM_2020_2021_2022_InterspaceCoverPercentages_20230203.csv")
