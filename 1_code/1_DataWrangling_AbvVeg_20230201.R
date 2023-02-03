@@ -200,6 +200,4 @@ str(INT_20.21.22_CoverPercent)
 INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
   drop_na(Total_Plant_Cover_Pct)
 
-#library(stringr)
-# INT_20.21.22$Bare_Class = str_replace_all(INT_20.21.22$Bare_Class, class_string) # replace class values
-
+write.csv(INT_20.21.22_CoverPercent, file = "2_incremental/JERHM_2020_2021_2022_InterspaceCoverPercentages_20230203.csv")
