@@ -70,8 +70,114 @@ INT_20.21.22_CoverPercent['Litter_Class'][INT_20.21.22_CoverPercent['Litter_Clas
 INT_20.21.22_CoverPercent$Litter_Class = as.numeric(INT_20.21.22_CoverPercent$Litter_Class)
 summary(INT_20.21.22_CoverPercent$Litter_Class)
 INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
-  mutate(rename)
+  rename(Litter_Cover_Pct = Litter_Class)
+summary(INT_20.21.22_CoverPercent$Litter_Cover_Pct)
 
-library(stringr)
+# Replace classes with mean cover percentages: Annual Grass
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['An_Grass_Class'][INT_20.21.22_CoverPercent['An_Grass_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$An_Grass_Class = as.numeric(INT_20.21.22_CoverPercent$An_Grass_Class)
+summary(INT_20.21.22_CoverPercent$An_Grass_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Annual_Grass_Cover_Pct = An_Grass_Class)
+summary(INT_20.21.22_CoverPercent$Annual_Grass_Cover_Pct)
+
+# Replace classes with mean cover percentages: Perennial Grass
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['Per_Grass_Class'][INT_20.21.22_CoverPercent['Per_Grass_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$Per_Grass_Class = as.numeric(INT_20.21.22_CoverPercent$Per_Grass_Class)
+summary(INT_20.21.22_CoverPercent$Per_Grass_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Perennial_Grass_Cover_Pct = Per_Grass_Class)
+summary(INT_20.21.22_CoverPercent$Perennial_Grass_Cover_Pct)
+
+# Replace classes with mean cover percentages: Annual Forb
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['An_Forb_Class'][INT_20.21.22_CoverPercent['An_Forb_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$An_Forb_Class = as.numeric(INT_20.21.22_CoverPercent$An_Forb_Class)
+summary(INT_20.21.22_CoverPercent$An_Forb_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Annual_Forb_Cover_Pct = An_Forb_Class)
+summary(INT_20.21.22_CoverPercent$Annual_Forb_Cover_Pct)
+
+# Replace classes with mean cover percentages: Perennial Forb
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['Per_Forb_Class'][INT_20.21.22_CoverPercent['Per_Forb_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$Per_Forb_Class = as.numeric(INT_20.21.22_CoverPercent$Per_Forb_Class)
+summary(INT_20.21.22_CoverPercent$Per_Forb_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Perennial_Forb_Cover_Pct = Per_Forb_Class)
+summary(INT_20.21.22_CoverPercent$Perennial_Forb_Cover_Pct)
+
+# Replace classes with mean cover percentages: Shrub
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['Shrub_Class'][INT_20.21.22_CoverPercent['Shrub_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$Shrub_Class = as.numeric(INT_20.21.22_CoverPercent$Shrub_Class)
+summary(INT_20.21.22_CoverPercent$Shrub_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Shrub_Cover_Pct = Shrub_Class)
+summary(INT_20.21.22_CoverPercent$Shrub_Cover_Pct)
+
+# Replace classes with mean cover percentages: Subshrub
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['Subshrub_Class'][INT_20.21.22_CoverPercent['Subshrub_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$Subshrub_Class = as.numeric(INT_20.21.22_CoverPercent$Subshrub_Class)
+summary(INT_20.21.22_CoverPercent$Subshrub_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Subshrub_Cover_Pct = Subshrub_Class)
+summary(INT_20.21.22_CoverPercent$Subshrub_Cover_Pct)
+
+# Replace classes with mean cover percentages: Gravel
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == '6'] = 97.5
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == '5'] = 85
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == '4'] = 62.5
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == '3'] = 37.5
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == '2'] = 15
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == '1'] = 2.5
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == 'T'] = 0.5
+INT_20.21.22_CoverPercent['Gravel_Class'][INT_20.21.22_CoverPercent['Gravel_Class'] == '0'] = 0
+INT_20.21.22_CoverPercent$Gravel_Class = as.numeric(INT_20.21.22_CoverPercent$Gravel_Class)
+summary(INT_20.21.22_CoverPercent$Gravel_Class)
+INT_20.21.22_CoverPercent = INT_20.21.22_CoverPercent %>% 
+  rename(Gravel_Cover_Pct = Gravel_Class)
+summary(INT_20.21.22_CoverPercent$Gravel_Cover_Pct)
+
+#library(stringr)
 # INT_20.21.22$Bare_Class = str_replace_all(INT_20.21.22$Bare_Class, class_string) # replace class values
 
