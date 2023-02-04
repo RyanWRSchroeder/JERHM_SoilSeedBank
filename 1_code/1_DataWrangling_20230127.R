@@ -204,7 +204,7 @@ write.csv(SSB_20.21_wide, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpec
 
 ## can run esquisser() and look at data. Looks good! 
 
-##### Transform seedling count data to density (seeds per m^2)
+##### Transform seedling count data to density (seeds per m^2) ####
 
 SamplingArea = 0.00353 # area in m^2 sampled for each soil seed bank sample
 
@@ -218,5 +218,27 @@ summary(SSB_20.21_m2)
 SSB_20.21_m2 = cbind(SSB_20.21_ID, SSB_20.21_m2) # combine the datasets to form a species matrix of the 72 taxa (lumped) as seeds/m^2
 str(SSB_20.21_m2)
 
+write.csv(SSB_20.21_m2, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpeciesMatrix_lumped_m2_20230204.csv") # write csv of SSB Species matrix m2 (72 taxa)
 
 
+### Create Control Only datasets #### 
+
+SSB_20.21_m2.Control = SSB_20.21_m2 %>% 
+  filter(Treatment %in% "Control")
+summary(SSB_20.21_m2.Control)
+
+write.csv(SSB_20.21_m2.Control, file = "2_incremental/JERHM_2020_2021_2022_SoilSeedBankSpeciesMatrix_ControlOnly_lumped_m2_20230204.csv")
+
+### Control and Interspace Only 
+SSB_20.21_m2.INT.Control = SSB_20.21_m2.Control %>% 
+  filter(Shrub_Interspace %in% "Interspace")
+summary(SSB_20.21_m2.INT.Control)
+
+write.csv(SSB_20.21_m2.INT.Control, file = "2_incremental/JERHM_2020_2021_2022_SoilSeedBankSpeciesMatrix_Interspace_ControlOnly_lumped_m2_20230204.csv")
+
+### Control and Shrub Only 
+SSB_20.21_m2.SHRUB.Control = SSB_20.21_m2.Control %>% 
+  filter(Shrub_Interspace %in% "Shrub")
+summary(SSB_20.21_m2.SHRUB.Control)
+
+write.csv(SSB_20.21_m2.SHRUB.Control, file = "2_incremental/JERHM_2020_2021_2022_SoilSeedBankSpeciesMatrix_Shrub_ControlOnly_lumped_m2_20230204.csv")
