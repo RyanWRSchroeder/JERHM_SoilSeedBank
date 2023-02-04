@@ -5,7 +5,7 @@ library(dplyr)
 library(tidyr)
 
 #### Aboveground Vegetation Data Wrangling #### 
-# Interspace and Shrub Island vegetation data to be wrangled
+# Interspace vegetation data to be wrangled
 
 #### Interspace Data #### 
 # Data collected from 2020, 2021, and 2022
