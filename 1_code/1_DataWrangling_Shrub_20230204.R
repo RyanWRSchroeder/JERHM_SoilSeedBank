@@ -65,3 +65,10 @@ SHRUB_20.21.22$Perimeter_m = as.numeric(SHRUB_20.21.22$Perimeter_m)
 
 # Create Shrub Island CSV
 write.csv(SHRUB_20.21.22, file = "2_incremental/JERHM_2020_2021_2022_ShrubCharacteristics_20230204.csv")
+
+# Filter to make only a Control Shrub dataset 
+SHRUB_20.21.22.Control = SHRUB_20.21.22 %>% 
+  filter(Treatment %in% "Control")
+summary(SHRUB_20.21.22.Control)
+
+write.csv(INT_20.21.22_CoverPercent.Control, file = "2_incremental/JERHM_2020_2021_2022_InterspaceCoverPercentages_ControlOnly_20230203.csv")
