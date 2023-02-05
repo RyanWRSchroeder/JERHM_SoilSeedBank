@@ -227,18 +227,18 @@ SSB_20.21_m2.Control = SSB_20.21_m2 %>%
   filter(Treatment %in% "Control")
 summary(SSB_20.21_m2.Control)
 
-write.csv(SSB_20.21_m2.Control, file = "2_incremental/JERHM_2020_2021_2022_SoilSeedBankSpeciesMatrix_ControlOnly_lumped_m2_20230204.csv")
+write.csv(SSB_20.21_m2.Control, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpeciesMatrix_ControlOnly_lumped_m2_20230204.csv")
 
 ### Control and Interspace Only 
 SSB_20.21_m2.INT.Control = SSB_20.21_m2.Control %>% 
   filter(Shrub_Interspace %in% "Interspace")
 summary(SSB_20.21_m2.INT.Control)
 
-write.csv(SSB_20.21_m2.INT.Control, file = "2_incremental/JERHM_2020_2021_2022_SoilSeedBankSpeciesMatrix_Interspace_ControlOnly_lumped_m2_20230204.csv")
+write.csv(SSB_20.21_m2.INT.Control, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpeciesMatrix_Interspace_ControlOnly_lumped_m2_20230204.csv")
 
 ### Control and Shrub Only 
 SSB_20.21_m2.SHRUB.Control = SSB_20.21_m2.Control %>% 
   filter(Shrub_Interspace %in% "Shrub")
 summary(SSB_20.21_m2.SHRUB.Control)
 
-write.csv(SSB_20.21_m2.SHRUB.Control, file = "2_incremental/JERHM_2020_2021_2022_SoilSeedBankSpeciesMatrix_Shrub_ControlOnly_lumped_m2_20230204.csv")
+write.csv(SSB_20.21_m2.SHRUB.Control, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpeciesMatrix_Shrub_ControlOnly_lumped_m2_20230204.csv")
