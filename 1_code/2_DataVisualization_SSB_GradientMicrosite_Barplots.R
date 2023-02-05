@@ -354,5 +354,114 @@ BarPlot_IntroducedPerennialGrassSSB_ShrubEncroach_Microsite_H
 ggsave("3_output/results/BarPlot_IntroducedPerennialGrassSSB_ShrubEncroach_Microsite_H_h6_w8_300dpi.jpeg",
        plot = BarPlot_IntroducedPerennialGrassSSB_ShrubEncroach_Microsite_H, dpi = 300, height = 6, width = 8, units = "in" )
 
-#### Bar Plots along the Ecological State Gradient (Low, Medium, High, High + Invaded)
+#### Composite Figure along Shrub Encroachment Gradient #### 
+
+Stripped_BarPlot_TotalSSB_ShrubEncroach_Microsite_H = TotalSSB_ShrubEncroach_Microsite %>%
+  ggplot(aes(y = Total, x = Shrub_Encroach, fill= Shrub_Interspace))+
+  geom_bar(stat = "identity", color = "black", position=position_dodge()) +
+  geom_errorbar(aes(ymin=Total-se, ymax=Total+se), width=0.25, position=position_dodge(.9)) +
+  scale_y_continuous(name = "Total\nSeed Density")+
+  scale_x_discrete(name = "Shrub Encroachment Level")+
+  scale_fill_brewer(palette="Dark2", direction=-1)+
+  facet_wrap(~Year, nrow = 1, ncol = 2, )+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.text.y=element_text(color="black", size = 18),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(color="black", size=20, margin = margin(0,5,0,0)),
+        legend.position = "none",
+        strip.background =element_rect(fill=NA),
+        strip.text = element_text(color="black", size = 18)
+        )
+Stripped_BarPlot_TotalSSB_ShrubEncroach_Microsite_H
+
+Stripped_BarPlot_NativeAnnualForbSSB_ShrubEncroach_Microsite_H = NativeAnnualForbSSB_ShrubEncroach_Microsite %>%
+  ggplot(aes(y = Native_Annual_Forb, x = Shrub_Encroach, fill= Shrub_Interspace))+
+  geom_bar(stat = "identity", color = "black", position=position_dodge()) +
+  geom_errorbar(aes(ymin=Native_Annual_Forb-se, ymax=Native_Annual_Forb+se), width=0.25, position=position_dodge(.9)) +
+  scale_y_continuous(name = "Native\nAnnual Forbs")+
+  scale_x_discrete(name = "Shrub Encroachment Level")+
+  scale_fill_brewer(palette="Dark2", direction=-1)+
+  facet_wrap(~Year, nrow = 1, ncol = 2, )+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.text.y=element_text(color="black", size = 18),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(color="black", size=20, margin = margin(0,5,0,0)),
+        legend.position = "none",
+        strip.background =element_blank(),
+        strip.text = element_blank()
+        )
+Stripped_BarPlot_NativeAnnualForbSSB_ShrubEncroach_Microsite_H
+
+Stripped_BarPlot_NativePerennialGrassSSB_ShrubEncroach_Microsite_H = NativePerennialGrassSSB_ShrubEncroach_Microsite %>%
+  ggplot(aes(y = Native_Perennial_Grass, x = Shrub_Encroach, fill= Shrub_Interspace))+
+  geom_bar(stat = "identity", color = "black", position=position_dodge()) +
+  geom_errorbar(aes(ymin=Native_Perennial_Grass-se, ymax=Native_Perennial_Grass+se), width=0.25, position=position_dodge(.9)) +
+  scale_y_continuous(name = "Native\nPerennial Grasses")+
+  scale_x_discrete(name = "Shrub Encroachment Level")+
+  scale_fill_brewer(palette="Dark2", direction=-1)+
+  facet_wrap(~Year, nrow = 1, ncol = 2, )+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.text.y=element_text(color="black", size = 18),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(color="black", size=20, margin = margin(0,5,0,0)),
+        legend.position = "none",
+        strip.background =element_blank(),
+        strip.text = element_blank()
+  )
+Stripped_BarPlot_NativePerennialGrassSSB_ShrubEncroach_Microsite_H
+
+Stripped_BarPlot_NativePerennialForbSSB_ShrubEncroach_Microsite_H = NativePerennialForbSSB_ShrubEncroach_Microsite %>%
+  ggplot(aes(y = Native_Perennial_Forb, x = Shrub_Encroach, fill= Shrub_Interspace))+
+  geom_bar(stat = "identity", color = "black", position=position_dodge()) +
+  geom_errorbar(aes(ymin=Native_Perennial_Forb-se, ymax=Native_Perennial_Forb+se), width=0.25, position=position_dodge(.9)) +
+  scale_y_continuous(name = "Native\nPerennial Forbs")+
+  scale_x_discrete(name = "Shrub Encroachment Level")+
+  scale_fill_brewer(palette="Dark2", direction=-1)+
+  facet_wrap(~Year, nrow = 1, ncol = 2, )+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.text.y=element_text(color="black", size = 18),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(color="black", size=20, margin = margin(0,5,0,0)),
+        legend.position = "none",
+        strip.background =element_blank(),
+        strip.text = element_blank()
+  )
+Stripped_BarPlot_NativePerennialForbSSB_ShrubEncroach_Microsite_H
+
+Stripped_BarPlot_ShrubSSB_ShrubEncroach_Microsite_H = ShrubSSB_ShrubEncroach_Microsite %>%
+  ggplot(aes(y = Shrub, x = Shrub_Encroach, fill= Shrub_Interspace))+
+  geom_bar(stat = "identity", color = "black", position=position_dodge()) +
+  geom_errorbar(aes(ymin=Shrub-se, ymax=Shrub+se), width=0.25, position=position_dodge(.9)) +
+  scale_y_continuous(name = "Shrubs")+
+  scale_x_discrete(name = "Shrub Encroachment Level")+
+  scale_fill_brewer(palette="Dark2", direction=-1)+
+  facet_wrap(~Year, nrow = 1, ncol = 2, )+
+  labs(fill = "Microsite")+
+  theme_bw()+
+  theme(axis.text.x = element_text(color = "black", size = 20),
+        axis.text.y=element_text(color="black", size = 18),
+        axis.title.x = element_text(color="black", size=18, margin = margin(10,0,0,0)),
+        axis.title.y = element_text(color="black", size=20, margin = margin(0,5,0,0)),
+        legend.text=element_text(size=18),
+        legend.title = element_blank(),
+        legend.position = c(0.15,0.75),
+        strip.background =element_blank(),
+        strip.text = element_blank()
+  )
+Stripped_BarPlot_ShrubSSB_ShrubEncroach_Microsite_H
+
+library(ggpubr)
+SRM_2023_Figure = plot_grid(Stripped_BarPlot_TotalSSB_ShrubEncroach_Microsite_H, Stripped_BarPlot_NativeAnnualForbSSB_ShrubEncroach_Microsite_H,
+                       Stripped_BarPlot_NativePerennialGrassSSB_ShrubEncroach_Microsite_H, Stripped_BarPlot_NativePerennialForbSSB_ShrubEncroach_Microsite_H,
+                       Stripped_BarPlot_ShrubSSB_ShrubEncroach_Microsite_H, align="v", ncol=1, nrow=5, hjust = 0.04)
+SRM_2023_Figure = annotate_figure(SRM_2023_Figure,
+                             left = text_grob(expression(Seed~Density~(seeds~m^{-2})), color = "black", size = 16, face = "bold", rot = 90))
+SRM_2023_Figure
+
+ggsave("3_output/results/Composite_BarPlot_SSB_ShrubEncroach_Microsite_H_h12_w8_300dpi.jpeg",
+       plot = SRM_2023_Figure, dpi = 300, height = 12 , width = 8, units = "in" )
 
