@@ -71,4 +71,4 @@ SHRUB_20.21.22.Control = SHRUB_20.21.22 %>%
   filter(Treatment %in% "Control")
 summary(SHRUB_20.21.22.Control)
 
-write.csv(INT_20.21.22_CoverPercent.Control, file = "2_incremental/JERHM_2020_2021_2022_InterspaceCoverPercentages_ControlOnly_20230203.csv")
+write.csv(SHRUB_20.21.22.Control, file = "2_incremental/JERHM_2020_2021_2022_ShrubCharacteristics_ControlOnly_20230204.csv")
