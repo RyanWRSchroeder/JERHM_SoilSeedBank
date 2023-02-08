@@ -16,5 +16,6 @@ summary(SHRUB_20.21.Control)
 
 SSB_20.21_m2.SHRUB.Control.Join = full_join(SSB_20.21_m2.SHRUB.Control, SHRUB_20.21.Control, by = c("Plot_ID", "Year"))
 SSB_20.21_m2.SHRUB.Control.Join = SSB_20.21_m2.SHRUB.Control.Join[,-c(9:71)]
+summary(SSB_20.21_m2.SHRUB.Control.Join)
 
 esquisser()
