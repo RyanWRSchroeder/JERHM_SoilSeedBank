@@ -169,7 +169,7 @@ BarPlot_ShrubSSB_ShrubEncroach_Microsite_V = ShrubSSB_ShrubEncroach_Microsite %>
   scale_x_discrete(name = "Shrub Encroachment Level")+
   scale_fill_brewer(palette="Dark2", direction=-1)+
   facet_wrap(~Year, nrow = 2, ncol = 1)+
-  labs(title = "JERHM Shrub Seed Density (2020 & 2021)\nAveraged by Shrub Encroachment Level", fill = "Microsite")+
+  labs(title = "Shrub Seed Density (2020 & 2021)\nAveraged by Shrub Encroachment Level", fill = "Microsite")+
   theme_bw()+
   theme(axis.text.x = element_text(color = "black", size = 14),
         axis.text.y=element_text(color="black", size = 12),
@@ -192,7 +192,7 @@ BarPlot_ShrubSSB_ShrubEncroach_Microsite_H = ShrubSSB_ShrubEncroach_Microsite %>
   scale_x_discrete(name = "Shrub Encroachment Level")+
   scale_fill_brewer(palette="Dark2", direction=-1)+
   facet_wrap(~Year, nrow = 1, ncol = 2)+
-  labs(title = "JERHM Shrub Seed Density (2020 & 2021)\nAveraged by Shrub Encroachment Level", fill = "Microsite")+
+  labs(title = "Shrub Seed Density (2020 & 2021)\nAveraged by Shrub Encroachment Level", fill = "Microsite")+
   theme_bw()+
   theme(axis.text.x = element_text(color = "black", size = 14),
         axis.text.y=element_text(color="black", size = 12),
