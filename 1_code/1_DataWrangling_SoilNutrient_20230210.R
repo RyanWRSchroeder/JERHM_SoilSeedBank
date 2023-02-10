@@ -63,3 +63,6 @@ BarPlot_OM_ShrubEncroach_Microsite_H = OM_Year_ShrubEncroach_Microsite %>% ggplo
         legend.position = c(0.9,0.85),
         strip.background =element_rect(fill=NA))
 BarPlot_OM_ShrubEncroach_Microsite_H
+
+ggsave("3_output/results/BarPlot_OM_Control_Year_ShrubEncroach_h6_w8_300dpi.jpeg",
+       plot = BarPlot_OM_ShrubEncroach_Microsite_H, dpi = 300, height = 6, width = 8, units = "in" )
