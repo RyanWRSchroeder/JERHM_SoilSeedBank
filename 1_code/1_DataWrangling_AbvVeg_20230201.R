@@ -214,5 +214,11 @@ summary(INT_20.21.22_CoverPercent.Control)
 
 write.csv(INT_20.21.22_CoverPercent.Control, file = "2_incremental/JERHM_2020_2021_2022_InterspaceCoverPercentages_ControlOnly_20230203.csv")
 
-# 
+### Create dataframe setup where each cover class and year is associated with the variable as a response/predictor --> 2020_Bare_Ground_Pct
+
+INT_20.21.22_CoverPercent.Control.Long = INT_20.21.22_CoverPercent.Control %>% 
+  pivot_longer(cols = ends_with("Pct"), names_to = "variable", values_to = "Percent")
+
+INT_20.21.22_CoverPercent.Control.Wide = INT_20.21.22_CoverPercent.Control.Long %>% 
+  pivot_wider(names_from = c(Year,variable), names_sep = ".", values_from = c(Percent))
 

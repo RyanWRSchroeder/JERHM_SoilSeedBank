@@ -242,3 +242,14 @@ SSB_20.21_m2.SHRUB.Control = SSB_20.21_m2.Control %>%
 summary(SSB_20.21_m2.SHRUB.Control)
 
 write.csv(SSB_20.21_m2.SHRUB.Control, file = "2_incremental/JERHM_2020_2021_SoilSeedBankSpeciesMatrix_Shrub_ControlOnly_lumped_m2_20230204.csv")
+
+
+### Control and Interspace only functional groups with year as part of the column name 
+SSB_20.21_m2.INT.Control.FncGroup = SSB_20.21_m2.INT.Control %>% 
+  select(!(AMAL:VUOC))
+
+SSB_20.21_m2.INT.Control.Long = SSB_20.21_m2.INT.Control.FncGroup %>% 
+  pivot_longer(cols = c(9:17), names_to = "variable", values_to = "Density")
+
+SSB_20.21_m2.INT.Control.Wide = SSB_20.21_m2.INT.Control.Long %>% 
+  pivot_wider(names_from = c(Year,variable), names_sep = ".", values_from = c(Density))
